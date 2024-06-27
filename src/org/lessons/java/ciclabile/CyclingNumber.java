@@ -43,33 +43,33 @@ public class CyclingNumber {
     public static void main(String[] args) {
 
         //test constructor with parameters
-        CyclingNumber circlingNumber = new CyclingNumber(new int[]{1, 2, 3, 4, 5});
+        CyclingNumber cyclingNumber = new CyclingNumber(new int[]{1, 2, 3, 4, 5});
 
         //test both method hasElementsLeft() and getNextElement()
         //until end of the array
-        circlingNumber.getNextElement();
-        System.out.println(circlingNumber.hasElementsLeft());
-        circlingNumber.getNextElement();
-        System.out.println(circlingNumber.hasElementsLeft());
-        circlingNumber.getNextElement();
-        System.out.println(circlingNumber.hasElementsLeft());
-        circlingNumber.getNextElement();
-        System.out.println(circlingNumber.hasElementsLeft());
-        circlingNumber.getNextElement();
-        System.out.println(circlingNumber.hasElementsLeft());
-        circlingNumber.getNextElement();
+        cyclingNumber.getNextElement();
+        System.out.println(cyclingNumber.hasElementsLeft());
+        cyclingNumber.getNextElement();
+        System.out.println(cyclingNumber.hasElementsLeft());
+        cyclingNumber.getNextElement();
+        System.out.println(cyclingNumber.hasElementsLeft());
+        cyclingNumber.getNextElement();
+        System.out.println(cyclingNumber.hasElementsLeft());
+        cyclingNumber.getNextElement();
+        System.out.println(cyclingNumber.hasElementsLeft());
+        cyclingNumber.getNextElement();
 
         //test addElement
         int a = 24;
-        circlingNumber.addElement(circlingNumber.number, a);
-        System.out.println(circlingNumber.number[circlingNumber.number.length - 1]);
+        cyclingNumber.addElement(cyclingNumber.number, a);
+        System.out.println(cyclingNumber.number[cyclingNumber.number.length - 1]);
 
         //test constructor without parameters
         //and test both method hasElementsLeft() and getNextElement()
         //on the new created array
-        CyclingNumber circlingNumber2 = new CyclingNumber();
-        circlingNumber2.getNextElement();
-        System.out.println(circlingNumber2.hasElementsLeft());
-        System.out.println(Arrays.toString(circlingNumber2.number));
+        CyclingNumber cyclingNumber2 = new CyclingNumber();
+        cyclingNumber2.getNextElement();
+        System.out.println(cyclingNumber2.hasElementsLeft());
+        System.out.println(Arrays.toString(cyclingNumber2.number));
     }
 }
