@@ -19,7 +19,7 @@ public class CyclingNumber {
     }
 
     // add element to the array
-    public void addElement(int[] number, int a) {
+    public void addElement(int a) {
         int[] copy = new int[number.length + 1];
         System.arraycopy(number, 0, copy, 0, number.length);
         copy[number.length] = a;
@@ -61,7 +61,7 @@ public class CyclingNumber {
 
         //test addElement
         int a = 24;
-        cyclingNumber.addElement(cyclingNumber.number, a);
+        cyclingNumber.addElement(a);
         System.out.println(cyclingNumber.number[cyclingNumber.number.length - 1]);
 
         //test constructor without parameters
